@@ -7,21 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837EDE8DE7212D735B75A9B1 /* Pods_tybl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFF871DBC7C5F8508FE5F20 /* Pods_tybl.framework */; };
+		ED04970E2257D0BF00820B29 /* LoginOrSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04970D2257D0BF00820B29 /* LoginOrSignUpViewController.swift */; };
+		ED2FBAAC2256985D00E6DE3E /* UsersPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FBAAB2256985D00E6DE3E /* UsersPostsTableViewCell.swift */; };
+		ED4F19982257B79A00F23F8E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F19972257B79A00F23F8E /* FirebaseManager.swift */; };
 		ED89D8FF224C4FF900DF3834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D8FE224C4FF900DF3834 /* AppDelegate.swift */; };
-		ED89D901224C4FF900DF3834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D900224C4FF900DF3834 /* ViewController.swift */; };
 		ED89D904224C4FF900DF3834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89D902224C4FF900DF3834 /* Main.storyboard */; };
 		ED89D906224C4FFC00DF3834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED89D905224C4FFC00DF3834 /* Assets.xcassets */; };
 		ED89D909224C4FFC00DF3834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89D907224C4FFC00DF3834 /* LaunchScreen.storyboard */; };
+		ED89D91C224C55FA00DF3834 /* TravelFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89D91A224C55FA00DF3834 /* TravelFeed.storyboard */; };
+		ED89D91E224C56A800DF3834 /* TravelerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89D91D224C56A800DF3834 /* TravelerProfile.storyboard */; };
+		ED89D921224C579100DF3834 /* CreateTravelPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89D91F224C579100DF3834 /* CreateTravelPost.storyboard */; };
+		ED89D923224C580400DF3834 /* GroupTravel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED89D922224C580400DF3834 /* GroupTravel.storyboard */; };
+		ED89D925224C592C00DF3834 /* TravelFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D924224C592C00DF3834 /* TravelFeedTableViewController.swift */; };
+		ED89D927224C595000DF3834 /* CreateTravelPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D926224C595000DF3834 /* CreateTravelPostViewController.swift */; };
+		ED89D929224C596800DF3834 /* TravelProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D928224C596800DF3834 /* TravelProfileViewController.swift */; };
+		ED89D92B224C5A5700DF3834 /* GroupTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D92A224C5A5700DF3834 /* GroupTravelViewController.swift */; };
+		ED89D931224C5BA000DF3834 /* TravelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D930224C5BA000DF3834 /* TravelPost.swift */; };
+		ED89D933224C619500DF3834 /* TravelPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D932224C619500DF3834 /* TravelPostTableViewCell.swift */; };
+		ED89D935224C6A7E00DF3834 /* TravelPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D934224C6A7E00DF3834 /* TravelPostController.swift */; };
+		ED89D937224C6BF800DF3834 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D936224C6BF800DF3834 /* DateFormatter.swift */; };
+		ED89D93B224C6CF000DF3834 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D93A224C6CF000DF3834 /* User.swift */; };
+		ED89D93D224C6CFA00DF3834 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D93C224C6CFA00DF3834 /* UserController.swift */; };
+		ED89D93F224C6DB300DF3834 /* PhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D93E224C6DB300DF3834 /* PhotoSelector.swift */; };
+		ED89D941224C704D00DF3834 /* BucketListLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89D940224C704D00DF3834 /* BucketListLocation.swift */; };
+		ED9FB71822552430001D5739 /* BucketListLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FB71722552430001D5739 /* BucketListLocationController.swift */; };
+		ED9FB71B225553FB001D5739 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9FB71A225553FB001D5739 /* Explore.storyboard */; };
+		ED9FB71D2255594B001D5739 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FB71C2255594B001D5739 /* SearchResultsTableViewCell.swift */; };
+		ED9FB71F22555C5A001D5739 /* ExploreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FB71E22555C5A001D5739 /* ExploreTableViewController.swift */; };
+		EDB6D7DB2252C8E000065E9A /* SavedCategoryPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6D7DA2252C8E000065E9A /* SavedCategoryPostsTableViewController.swift */; };
+		EDB6D7DD2252CAE400065E9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDB6D7DC2252CAE400065E9A /* GoogleService-Info.plist */; };
+		EDCCE24F2253C83B00A27FAC /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCE24E2253C83B00A27FAC /* OnboardViewController.swift */; };
+		EDCCE2522253CDB900A27FAC /* Onboarding2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCE2512253CDB900A27FAC /* Onboarding2ViewController.swift */; };
+		EDDBE1EA224EAF1B00424F9D /* BLTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBE1E9224EAF1B00424F9D /* BLTypeTableViewController.swift */; };
+		EDDBE1EC2251B39C00424F9D /* Page2CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBE1EB2251B39C00424F9D /* Page2CreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5454F1906CB1ACE335F9C30C /* Pods-tybl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tybl.debug.xcconfig"; path = "Target Support Files/Pods-tybl/Pods-tybl.debug.xcconfig"; sourceTree = "<group>"; };
+		54D1D3A9DEC4263AECC595A7 /* Pods-tybl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tybl.release.xcconfig"; path = "Target Support Files/Pods-tybl/Pods-tybl.release.xcconfig"; sourceTree = "<group>"; };
+		6AFF871DBC7C5F8508FE5F20 /* Pods_tybl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tybl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED04970D2257D0BF00820B29 /* LoginOrSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewController.swift; sourceTree = "<group>"; };
+		ED2FBAAB2256985D00E6DE3E /* UsersPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPostsTableViewCell.swift; sourceTree = "<group>"; };
+		ED4F19972257B79A00F23F8E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		ED89D8FB224C4FF900DF3834 /* tybl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tybl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED89D8FE224C4FF900DF3834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED89D900224C4FF900DF3834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED89D903224C4FF900DF3834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED89D905224C4FFC00DF3834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED89D908224C4FFC00DF3834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED89D90A224C4FFC00DF3834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED89D91B224C55FA00DF3834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = tybl/Storyboards/Base.lproj/TravelFeed.storyboard; sourceTree = "<group>"; };
+		ED89D91D224C56A800DF3834 /* TravelerProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TravelerProfile.storyboard; sourceTree = "<group>"; };
+		ED89D920224C579100DF3834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = tybl/Storyboards/Base.lproj/CreateTravelPost.storyboard; sourceTree = "<group>"; };
+		ED89D922224C580400DF3834 /* GroupTravel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GroupTravel.storyboard; sourceTree = "<group>"; };
+		ED89D924224C592C00DF3834 /* TravelFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelFeedTableViewController.swift; sourceTree = "<group>"; };
+		ED89D926224C595000DF3834 /* CreateTravelPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTravelPostViewController.swift; sourceTree = "<group>"; };
+		ED89D928224C596800DF3834 /* TravelProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelProfileViewController.swift; sourceTree = "<group>"; };
+		ED89D92A224C5A5700DF3834 /* GroupTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTravelViewController.swift; sourceTree = "<group>"; };
+		ED89D930224C5BA000DF3834 /* TravelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPost.swift; sourceTree = "<group>"; };
+		ED89D932224C619500DF3834 /* TravelPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPostTableViewCell.swift; sourceTree = "<group>"; };
+		ED89D934224C6A7E00DF3834 /* TravelPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPostController.swift; sourceTree = "<group>"; };
+		ED89D936224C6BF800DF3834 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		ED89D93A224C6CF000DF3834 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED89D93C224C6CFA00DF3834 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		ED89D93E224C6DB300DF3834 /* PhotoSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelector.swift; sourceTree = "<group>"; };
+		ED89D940224C704D00DF3834 /* BucketListLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListLocation.swift; sourceTree = "<group>"; };
+		ED9FB71722552430001D5739 /* BucketListLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListLocationController.swift; sourceTree = "<group>"; };
+		ED9FB71A225553FB001D5739 /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
+		ED9FB71C2255594B001D5739 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		ED9FB71E22555C5A001D5739 /* ExploreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewController.swift; sourceTree = "<group>"; };
+		EDB6D7DA2252C8E000065E9A /* SavedCategoryPostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCategoryPostsTableViewController.swift; sourceTree = "<group>"; };
+		EDB6D7DC2252CAE400065E9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDCCE24E2253C83B00A27FAC /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		EDCCE2512253CDB900A27FAC /* Onboarding2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2ViewController.swift; sourceTree = "<group>"; };
+		EDDBE1E9224EAF1B00424F9D /* BLTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLTypeTableViewController.swift; sourceTree = "<group>"; };
+		EDDBE1EB2251B39C00424F9D /* Page2CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2CreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837EDE8DE7212D735B75A9B1 /* Pods_tybl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5037B5D99522F9938D8FFFF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AFF871DBC7C5F8508FE5F20 /* Pods_tybl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED24F6AA5CD38F5FB5CB9FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5454F1906CB1ACE335F9C30C /* Pods-tybl.debug.xcconfig */,
+				54D1D3A9DEC4263AECC595A7 /* Pods-tybl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED89D8F2224C4FF900DF3834 = {
 			isa = PBXGroup;
 			children = (
 				ED89D8FD224C4FF900DF3834 /* tybl */,
 				ED89D8FC224C4FF900DF3834 /* Products */,
+				CED24F6AA5CD38F5FB5CB9FD /* Pods */,
+				5037B5D99522F9938D8FFFF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +134,146 @@
 		ED89D8FD224C4FF900DF3834 /* tybl */ = {
 			isa = PBXGroup;
 			children = (
-				ED89D8FE224C4FF900DF3834 /* AppDelegate.swift */,
-				ED89D900224C4FF900DF3834 /* ViewController.swift */,
-				ED89D902224C4FF900DF3834 /* Main.storyboard */,
-				ED89D905224C4FFC00DF3834 /* Assets.xcassets */,
-				ED89D907224C4FFC00DF3834 /* LaunchScreen.storyboard */,
-				ED89D90A224C4FFC00DF3834 /* Info.plist */,
+				ED89D915224C542A00DF3834 /* Models */,
+				ED89D919224C54B100DF3834 /* Views */,
+				ED89D912224C503A00DF3834 /* Storyboards */,
+				ED89D916224C543100DF3834 /* Controllers */,
+				ED89D911224C502600DF3834 /* Resources */,
 			);
 			path = tybl;
+			sourceTree = "<group>";
+		};
+		ED89D911224C502600DF3834 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D8FE224C4FF900DF3834 /* AppDelegate.swift */,
+				ED4F19972257B79A00F23F8E /* FirebaseManager.swift */,
+				ED89D936224C6BF800DF3834 /* DateFormatter.swift */,
+				ED89D93E224C6DB300DF3834 /* PhotoSelector.swift */,
+				ED89D905224C4FFC00DF3834 /* Assets.xcassets */,
+				ED89D90A224C4FFC00DF3834 /* Info.plist */,
+				EDB6D7DC2252CAE400065E9A /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED89D912224C503A00DF3834 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D902224C4FF900DF3834 /* Main.storyboard */,
+				ED89D91A224C55FA00DF3834 /* TravelFeed.storyboard */,
+				ED9FB71A225553FB001D5739 /* Explore.storyboard */,
+				ED89D91F224C579100DF3834 /* CreateTravelPost.storyboard */,
+				ED89D922224C580400DF3834 /* GroupTravel.storyboard */,
+				ED89D91D224C56A800DF3834 /* TravelerProfile.storyboard */,
+				ED89D907224C4FFC00DF3834 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED89D915224C542A00DF3834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D930224C5BA000DF3834 /* TravelPost.swift */,
+				ED89D940224C704D00DF3834 /* BucketListLocation.swift */,
+				ED89D93A224C6CF000DF3834 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ED89D916224C543100DF3834 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D918224C544A00DF3834 /* ModelControllers */,
+				ED89D917224C543F00DF3834 /* ViewControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ED89D917224C543F00DF3834 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCE2502253C84000A27FAC /* Onboarding */,
+				ED89D92C224C5A6200DF3834 /* TravelFeed */,
+				EDCCE2492253B9CC00A27FAC /* Explore */,
+				ED89D92D224C5A6E00DF3834 /* CreatePost */,
+				ED89D92E224C5A7700DF3834 /* GroupTravel */,
+				ED89D92F224C5A8600DF3834 /* TravelerProfile */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED89D918224C544A00DF3834 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D934224C6A7E00DF3834 /* TravelPostController.swift */,
+				ED9FB71722552430001D5739 /* BucketListLocationController.swift */,
+				ED89D93C224C6CFA00DF3834 /* UserController.swift */,
+			);
+			name = ModelControllers;
+			sourceTree = "<group>";
+		};
+		ED89D919224C54B100DF3834 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D932224C619500DF3834 /* TravelPostTableViewCell.swift */,
+				ED9FB71C2255594B001D5739 /* SearchResultsTableViewCell.swift */,
+				ED2FBAAB2256985D00E6DE3E /* UsersPostsTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ED89D92C224C5A6200DF3834 /* TravelFeed */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D924224C592C00DF3834 /* TravelFeedTableViewController.swift */,
+			);
+			path = TravelFeed;
+			sourceTree = "<group>";
+		};
+		ED89D92D224C5A6E00DF3834 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D926224C595000DF3834 /* CreateTravelPostViewController.swift */,
+				EDDBE1EB2251B39C00424F9D /* Page2CreateViewController.swift */,
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		ED89D92E224C5A7700DF3834 /* GroupTravel */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D92A224C5A5700DF3834 /* GroupTravelViewController.swift */,
+			);
+			path = GroupTravel;
+			sourceTree = "<group>";
+		};
+		ED89D92F224C5A8600DF3834 /* TravelerProfile */ = {
+			isa = PBXGroup;
+			children = (
+				ED89D928224C596800DF3834 /* TravelProfileViewController.swift */,
+				EDDBE1E9224EAF1B00424F9D /* BLTypeTableViewController.swift */,
+				EDB6D7DA2252C8E000065E9A /* SavedCategoryPostsTableViewController.swift */,
+			);
+			path = TravelerProfile;
+			sourceTree = "<group>";
+		};
+		EDCCE2492253B9CC00A27FAC /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FB71E22555C5A001D5739 /* ExploreTableViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		EDCCE2502253C84000A27FAC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ED04970D2257D0BF00820B29 /* LoginOrSignUpViewController.swift */,
+				EDCCE24E2253C83B00A27FAC /* OnboardViewController.swift */,
+				EDCCE2512253CDB900A27FAC /* Onboarding2ViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED89D90D224C4FFC00DF3834 /* Build configuration list for PBXNativeTarget "tybl" */;
 			buildPhases = (
+				E9492C473DA67040C2D36C39 /* [CP] Check Pods Manifest.lock */,
 				ED89D8F7224C4FF900DF3834 /* Sources */,
 				ED89D8F8224C4FF900DF3834 /* Frameworks */,
 				ED89D8F9224C4FF900DF3834 /* Resources */,
+				1E69C69D7BDF547CB6C6B5AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +336,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED89D921224C579100DF3834 /* CreateTravelPost.storyboard in Resources */,
+				EDB6D7DD2252CAE400065E9A /* GoogleService-Info.plist in Resources */,
 				ED89D909224C4FFC00DF3834 /* LaunchScreen.storyboard in Resources */,
 				ED89D906224C4FFC00DF3834 /* Assets.xcassets in Resources */,
+				ED9FB71B225553FB001D5739 /* Explore.storyboard in Resources */,
+				ED89D91E224C56A800DF3834 /* TravelerProfile.storyboard in Resources */,
+				ED89D91C224C55FA00DF3834 /* TravelFeed.storyboard in Resources */,
+				ED89D923224C580400DF3834 /* GroupTravel.storyboard in Resources */,
 				ED89D904224C4FF900DF3834 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E69C69D7BDF547CB6C6B5AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tybl/Pods-tybl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tybl/Pods-tybl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9492C473DA67040C2D36C39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tybl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED89D8F7224C4FF900DF3834 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED89D901224C4FF900DF3834 /* ViewController.swift in Sources */,
+				ED89D937224C6BF800DF3834 /* DateFormatter.swift in Sources */,
+				ED89D93F224C6DB300DF3834 /* PhotoSelector.swift in Sources */,
+				ED89D933224C619500DF3834 /* TravelPostTableViewCell.swift in Sources */,
+				ED2FBAAC2256985D00E6DE3E /* UsersPostsTableViewCell.swift in Sources */,
+				ED89D92B224C5A5700DF3834 /* GroupTravelViewController.swift in Sources */,
+				ED9FB71F22555C5A001D5739 /* ExploreTableViewController.swift in Sources */,
+				ED89D93D224C6CFA00DF3834 /* UserController.swift in Sources */,
+				ED89D927224C595000DF3834 /* CreateTravelPostViewController.swift in Sources */,
+				ED9FB71822552430001D5739 /* BucketListLocationController.swift in Sources */,
+				ED04970E2257D0BF00820B29 /* LoginOrSignUpViewController.swift in Sources */,
 				ED89D8FF224C4FF900DF3834 /* AppDelegate.swift in Sources */,
+				EDB6D7DB2252C8E000065E9A /* SavedCategoryPostsTableViewController.swift in Sources */,
+				EDDBE1EA224EAF1B00424F9D /* BLTypeTableViewController.swift in Sources */,
+				ED89D941224C704D00DF3834 /* BucketListLocation.swift in Sources */,
+				EDCCE24F2253C83B00A27FAC /* OnboardViewController.swift in Sources */,
+				ED89D931224C5BA000DF3834 /* TravelPost.swift in Sources */,
+				ED89D935224C6A7E00DF3834 /* TravelPostController.swift in Sources */,
+				ED89D929224C596800DF3834 /* TravelProfileViewController.swift in Sources */,
+				ED89D93B224C6CF000DF3834 /* User.swift in Sources */,
+				ED89D925224C592C00DF3834 /* TravelFeedTableViewController.swift in Sources */,
+				ED9FB71D2255594B001D5739 /* SearchResultsTableViewCell.swift in Sources */,
+				ED4F19982257B79A00F23F8E /* FirebaseManager.swift in Sources */,
+				EDDBE1EC2251B39C00424F9D /* Page2CreateViewController.swift in Sources */,
+				EDCCE2522253CDB900A27FAC /* Onboarding2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +452,22 @@
 				ED89D908224C4FFC00DF3834 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED89D91A224C55FA00DF3834 /* TravelFeed.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED89D91B224C55FA00DF3834 /* Base */,
+			);
+			name = TravelFeed.storyboard;
+			sourceTree = "<group>";
+		};
+		ED89D91F224C579100DF3834 /* CreateTravelPost.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED89D920224C579100DF3834 /* Base */,
+			);
+			name = CreateTravelPost.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,16 +591,17 @@
 		};
 		ED89D90E224C4FFC00DF3834 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5454F1906CB1ACE335F9C30C /* Pods-tybl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T4C65R2UFW;
-				INFOPLIST_FILE = tybl/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/tybl/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Andrus.tybl;
+				PRODUCT_BUNDLE_IDENTIFIER = andrus.tybl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,16 +610,17 @@
 		};
 		ED89D90F224C4FFC00DF3834 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D1D3A9DEC4263AECC595A7 /* Pods-tybl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T4C65R2UFW;
-				INFOPLIST_FILE = tybl/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/tybl/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Andrus.tybl;
+				PRODUCT_BUNDLE_IDENTIFIER = andrus.tybl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

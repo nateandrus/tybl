@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="huH-oW-9l6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore View Controller-->
+        <scene sceneID="QxV-bR-xir">
+            <objects>
+                <viewController id="wd3-q5-CaY" customClass="ExploreViewController" customModule="tybl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UWI-WC-9pB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="f3J-gE-FA9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ewe-Ux-xEB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRk-hF-mmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="-401"/>
+        </scene>
+        <!--Group Travel-->
+        <scene sceneID="jg0-Qu-xaZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="huH-oW-9l6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Group Travel" image="group" id="l91-aO-Fob"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WCk-sl-Nk4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wd3-q5-CaY" kind="relationship" relationship="rootViewController" id="yfU-44-cmf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIl-W4-mbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="-401.11607142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="group" width="25" height="25"/>
+    </resources>
+</document>

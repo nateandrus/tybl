@@ -1,0 +1,6 @@
+framework module Pods_tybl {
+  umbrella header "Pods-tybl-umbrella.h"
+
+  export *
+  module * { export * }
+}
